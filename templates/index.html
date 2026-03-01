@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>🔥 Deepan ULTRA GOD MODE</title>
+<style>
+body{
+    background:black;
+    color:#00ff88;
+    font-family:Consolas, monospace;
+    white-space:pre;
+    font-size:6px;
+    text-align:center;
+}
+#ascii{ line-height:6px; }
+button{ padding:10px; margin:10px; }
+</style>
+</head>
+<body>
+
+<h1>🚀 Deepan Ultra God ASCII</h1>
+
+<div id="ascii">Starting camera...</div>
+
+<h2>📸 4K Image Generator</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <button type="submit">Generate 4K ASCII</button>
+</form>
+
+<script>
+const asciiDiv=document.getElementById("ascii");
+const evt=new EventSource("/video_feed");
+evt.onmessage=e=>asciiDiv.textContent=e.data;
+</script>
+
+</body>
+</html>
